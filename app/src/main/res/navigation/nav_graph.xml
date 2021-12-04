@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/introFragment">
+
+    <fragment
+        android:id="@+id/introFragment"
+        android:name="com.example.test1.IntroFragment"
+        android:label="fragment_intro"
+        tools:layout="@layout/fragment_intro" >
+        <action
+            android:id="@+id/action_introFragment_to_quizFragment"
+            app:destination="@id/quizFragment" />
+        <action
+            android:id="@+id/action_introFragment_to_quizFragment2"
+            app:destination="@id/quizFragment" />
+        <action
+            android:id="@+id/action_introFragment_to_quizFragment3"
+            app:destination="@id/quizFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.example.test1.QuizFragment"
+        android:label="fragment_quiz"
+        tools:layout="@layout/fragment_quiz" />
+    <fragment
+        android:id="@+id/finishFragment"
+        android:name="com.example.test1.FinishFragment"
+        android:label="FinishFragment" />
+    <fragment
+        android:id="@+id/about"
+        android:name="com.example.test1.about"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+</navigation>
